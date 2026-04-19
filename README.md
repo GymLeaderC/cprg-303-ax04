@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+# Assignment 4 - Supabase Authentication
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Setup
 
-## Get started
+1. Clone the repo
+2. Run `npm install`
+3. Create a `.env` file in the root with:
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_project_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-1. Install dependencies
+4. Run `npx expo start`
 
-   ```bash
-   npm install
-   ```
+## Supabase Setup
 
-2. Start the app
+- Project created at supabase.com
+- Auth is enabled by default (no additional configuration needed)
+- Email confirmation: [note whether you left it enabled or disabled in Supabase dashboard]
 
-   ```bash
-   npx expo start
-   ```
+## Test Accounts
 
-In the output, you'll find options to open the app in a
+- Email: test@example.com / Password: Test1234!
+(or whatever test account you create)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Notes
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `.env` is listed in `.gitignore` and is not committed
+- Sessions persist across app launches via AsyncStorage
